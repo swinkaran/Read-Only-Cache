@@ -1,0 +1,5 @@
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Entities\bin\Debug\netcoreapp2.0\Azure.CachedStorage.Entities.deps.json
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Entities\bin\Debug\netcoreapp2.0\Azure.CachedStorage.Entities.dll
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Entities\obj\Debug\netcoreapp2.0\Azure.CachedStorage.Entities.csproj.CoreCompileInputs.cache
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Entities\obj\Debug\netcoreapp2.0\Azure.CachedStorage.Entities.AssemblyInfoInputs.cache
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Entities\obj\Debug\netcoreapp2.0\Azure.CachedStorage.Entities.AssemblyInfo.cs

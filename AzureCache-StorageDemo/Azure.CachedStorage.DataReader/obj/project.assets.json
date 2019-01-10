@@ -670,11 +670,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\users\\srikarans\\documents\\visual studio 2017\\Projects\\AzureCache-StorageDemo\\Azure.CachedStorage.DataReader\\Azure.CachedStorage.DataReader.csproj",
+      "projectUniqueName": "C:\\Users\\srikarans\\Documents\\GitHub\\Read-Only-Cache\\AzureCache-StorageDemo\\Azure.CachedStorage.DataReader\\Azure.CachedStorage.DataReader.csproj",
       "projectName": "Azure.CachedStorage.DataReader",
-      "projectPath": "c:\\users\\srikarans\\documents\\visual studio 2017\\Projects\\AzureCache-StorageDemo\\Azure.CachedStorage.DataReader\\Azure.CachedStorage.DataReader.csproj",
+      "projectPath": "C:\\Users\\srikarans\\Documents\\GitHub\\Read-Only-Cache\\AzureCache-StorageDemo\\Azure.CachedStorage.DataReader\\Azure.CachedStorage.DataReader.csproj",
       "packagesPath": "C:\\Users\\srikarans\\.nuget\\packages\\",
-      "outputPath": "c:\\users\\srikarans\\documents\\visual studio 2017\\Projects\\AzureCache-StorageDemo\\Azure.CachedStorage.DataReader\\obj\\",
+      "outputPath": "C:\\Users\\srikarans\\Documents\\GitHub\\Read-Only-Cache\\AzureCache-StorageDemo\\Azure.CachedStorage.DataReader\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

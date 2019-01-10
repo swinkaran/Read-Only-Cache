@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Azure.CachedStorage.Entities.DataWriter.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -11,6 +12,13 @@ namespace Azure.CachedStorage.Demo.Controllers
     [Route("api/Expenses")]
     public class ExpensesController : Controller
     {
+        private IRepositoryWrapper _repository;
+
+        public ExpensesController(IRepositoryWrapper repository)
+        {
+            _repository = repository;
+        }
+
         // GET: api/Expenses
         [HttpGet]
         public IEnumerable<string> Get()

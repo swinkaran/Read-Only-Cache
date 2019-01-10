@@ -1,0 +1,6 @@
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.DataWriter\bin\Debug\netcoreapp2.0\Azure.CachedStorage.DataWriter.deps.json
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.DataWriter\bin\Debug\netcoreapp2.0\Azure.CachedStorage.DataWriter.dll
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.DataWriter\obj\Debug\netcoreapp2.0\Azure.CachedStorage.DataWriter.csprojAssemblyReference.cache
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.DataWriter\obj\Debug\netcoreapp2.0\Azure.CachedStorage.DataWriter.csproj.CoreCompileInputs.cache
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.DataWriter\obj\Debug\netcoreapp2.0\Azure.CachedStorage.DataWriter.AssemblyInfoInputs.cache
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.DataWriter\obj\Debug\netcoreapp2.0\Azure.CachedStorage.DataWriter.AssemblyInfo.cs
