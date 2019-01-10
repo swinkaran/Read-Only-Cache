@@ -1,0 +1,11 @@
+c:\users\srikarans\documents\visual studio 2017\Projects\AzureCache-StorageDemo\Azure.CachedStorage.Demo\bin\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.deps.json
+c:\users\srikarans\documents\visual studio 2017\Projects\AzureCache-StorageDemo\Azure.CachedStorage.Demo\bin\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.runtimeconfig.json
+c:\users\srikarans\documents\visual studio 2017\Projects\AzureCache-StorageDemo\Azure.CachedStorage.Demo\bin\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.runtimeconfig.dev.json
+c:\users\srikarans\documents\visual studio 2017\Projects\AzureCache-StorageDemo\Azure.CachedStorage.Demo\bin\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.dll
+c:\users\srikarans\documents\visual studio 2017\Projects\AzureCache-StorageDemo\Azure.CachedStorage.Demo\obj\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.csprojAssemblyReference.cache
+c:\users\srikarans\documents\visual studio 2017\Projects\AzureCache-StorageDemo\Azure.CachedStorage.Demo\obj\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.csproj.CoreCompileInputs.cache
+c:\users\srikarans\documents\visual studio 2017\Projects\AzureCache-StorageDemo\Azure.CachedStorage.Demo\obj\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.AssemblyInfoInputs.cache
+c:\users\srikarans\documents\visual studio 2017\Projects\AzureCache-StorageDemo\Azure.CachedStorage.Demo\obj\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.AssemblyInfo.cs
+c:\users\srikarans\documents\visual studio 2017\Projects\AzureCache-StorageDemo\Azure.CachedStorage.Demo\bin\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.pdb
+c:\users\srikarans\documents\visual studio 2017\Projects\AzureCache-StorageDemo\Azure.CachedStorage.Demo\obj\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.dll
+c:\users\srikarans\documents\visual studio 2017\Projects\AzureCache-StorageDemo\Azure.CachedStorage.Demo\obj\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.pdb
