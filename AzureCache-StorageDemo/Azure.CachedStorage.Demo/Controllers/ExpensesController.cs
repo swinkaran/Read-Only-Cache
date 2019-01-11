@@ -21,9 +21,19 @@ namespace Azure.CachedStorage.Demo.Controllers
 
         // GET: api/Expenses
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IActionResult> Get()
         {
-            return new string[] { "value1", "value2" };
+            try
+            {
+                var expenses = await _repository.Expense.GetAllExpensesAsync();
+
+                return Ok(expenses);
+            }
+            catch (Exception ex)
+            {
+               // _logger.LogError($"Some error in the GetAllOwners method: {ex}");
+                return StatusCode(500, "Internal server error");
+            }
         }
 
         // GET: api/Expenses/5

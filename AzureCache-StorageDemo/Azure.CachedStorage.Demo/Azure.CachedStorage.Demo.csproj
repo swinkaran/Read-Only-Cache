@@ -18,4 +18,9 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Azure.CachedStorage.DataWriter\Azure.CachedStorage.DataWriter.csproj" />
+    <ProjectReference Include="..\Azure.CachedStorage.Entities\Azure.CachedStorage.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
