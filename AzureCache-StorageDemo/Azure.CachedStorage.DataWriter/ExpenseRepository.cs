@@ -1,14 +1,7 @@
-﻿using Contracts;
-using Entities;
-using Entities.Models;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System;
-using Entities.ExtendedModels;
-using Entities.Extensions;
 using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Azure.CachedStorage.Entities;
 using Azure.CachedStorage.Entities.Models;
 using Azure.CachedStorage.Entities.DataWriter.Interfaces;
 
@@ -54,7 +47,7 @@ namespace Azure.CachedStorage.Entities.DataWriter
 
         public async Task UpdateExpenseAsync(Expense dbExpense, Expense Expense)
         {
-            dbExpense.Map(Expense);
+            //dbExpense.Map(Expense);
             Update(dbExpense);
             await SaveAsync();
         }

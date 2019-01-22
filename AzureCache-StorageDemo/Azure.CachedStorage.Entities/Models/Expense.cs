@@ -13,8 +13,8 @@ namespace Azure.CachedStorage.Entities.Models
         [Column("ExpenseId")]
         public Guid Id { get; set; }
 
-        [Required(ErrorMessage = "Name is required")]
-        [StringLength(60, ErrorMessage = "Name can't be longer than 60 characters")]
+        [Required(ErrorMessage = "Expense is required")]
+        [StringLength(60, ErrorMessage = "Expense can't be longer than 60 characters")]
         public string Name { get; set; }
 
         [StringLength(100, ErrorMessage = "Description can't be longer than 100 characters")]

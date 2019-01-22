@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Azure.CachedStorage.Entities.DataWriter;
+using Azure.CachedStorage.Entities.DataWriter.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -23,6 +25,10 @@ namespace Azure.CachedStorage.Demo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.ConfigureMsSqlContext(Configuration);
+
+            services.ConfigureRepositoryWrapper();
+
             services.AddMvc();
         }
 

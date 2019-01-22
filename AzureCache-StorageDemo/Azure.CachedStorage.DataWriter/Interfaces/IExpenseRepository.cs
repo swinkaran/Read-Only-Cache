@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Azure.CachedStorage.Entities.DataWriter.Interfaces
 {
-{
     public interface IExpenseRepository : IRepositoryBase<Expense>
     {
         Task<IEnumerable<Expense>> GetAllExpensesAsync();
@@ -16,5 +15,4 @@ namespace Azure.CachedStorage.Entities.DataWriter.Interfaces
         Task UpdateExpenseAsync(Expense dbExpense, Expense Expense);
         Task DeleteExpenseAsync(Expense Expense);
     }
-
 }
