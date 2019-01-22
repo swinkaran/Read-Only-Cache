@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Azure.CachedStorage.DataWri
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Azure.CachedStorage.DataReader", "Azure.CachedStorage.DataReader\Azure.CachedStorage.DataReader.csproj", "{D062C6CA-7B8A-4B9A-8717-A328F732684D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azure.CachedStorage.Entities", "Azure.CachedStorage.Entities\Azure.CachedStorage.Entities.csproj", "{CAFB2845-977A-423F-AD59-A9B934F6F512}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Azure.CachedStorage.Entities", "Azure.CachedStorage.Entities\Azure.CachedStorage.Entities.csproj", "{CAFB2845-977A-423F-AD59-A9B934F6F512}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadCache.App", "ReadCache.App\ReadCache.App.csproj", "{D1ED903A-7C30-41FC-8C5C-1DE8FD312DB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{CAFB2845-977A-423F-AD59-A9B934F6F512}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CAFB2845-977A-423F-AD59-A9B934F6F512}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CAFB2845-977A-423F-AD59-A9B934F6F512}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1ED903A-7C30-41FC-8C5C-1DE8FD312DB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1ED903A-7C30-41FC-8C5C-1DE8FD312DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1ED903A-7C30-41FC-8C5C-1DE8FD312DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1ED903A-7C30-41FC-8C5C-1DE8FD312DB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

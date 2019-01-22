@@ -7,6 +7,9 @@ namespace Azure.CachedStorage.Demo.Services.CommandsService
 {
     public class CommandsService : ICommandsService
     {
+        class Result {
+
+        }
 
         // return sample data
     }
