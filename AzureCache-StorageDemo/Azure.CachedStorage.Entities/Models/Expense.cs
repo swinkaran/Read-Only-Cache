@@ -7,7 +7,7 @@ using System.Text;
 namespace Azure.CachedStorage.Entities.Models
 {
     [Table("Expense")]
-    public class Expense : IEntity
+    public class Expense
     {
         [Key]
         [Column("ExpenseId")]
@@ -20,10 +20,10 @@ namespace Azure.CachedStorage.Entities.Models
         [StringLength(100, ErrorMessage = "Description can't be longer than 100 characters")]
         public string Description { get; set; }
 
-        [Required(ErrorMessage = "Amount is required")]
-        public float Amount { get; set; }
+        //[Required(ErrorMessage = "Amount is required")]
+        //public float Amount { get; set; }
 
-        [Required(ErrorMessage = "Date is required")]
-        public float Date { get; set; }
+        //[Required(ErrorMessage = "Date is required")]
+        //public float Date { get; set; }
     }
 }

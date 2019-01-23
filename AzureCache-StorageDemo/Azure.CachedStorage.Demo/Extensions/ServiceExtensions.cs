@@ -22,11 +22,7 @@ namespace Azure.CachedStorage.Demo
             var optionsBuilder = new DbContextOptionsBuilder<RepositoryContext>();
             optionsBuilder.UseSqlServer(connectionString);
 
-            using (var context = new RepositoryContext(optionsBuilder.Options))
-            {
-                // do stuff
-            }
-
+        
             // Database settings for Data writer
 
             //DbContextOptionsBuilder builder = new DbContextOptionsBuilder<FlightsDBContext>();

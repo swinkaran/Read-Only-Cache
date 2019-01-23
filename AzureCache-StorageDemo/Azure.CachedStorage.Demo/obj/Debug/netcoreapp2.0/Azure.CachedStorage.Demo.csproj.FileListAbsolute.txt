@@ -9,3 +9,19 @@ c:\users\srikarans\documents\visual studio 2017\Projects\AzureCache-StorageDemo\
 c:\users\srikarans\documents\visual studio 2017\Projects\AzureCache-StorageDemo\Azure.CachedStorage.Demo\bin\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.pdb
 c:\users\srikarans\documents\visual studio 2017\Projects\AzureCache-StorageDemo\Azure.CachedStorage.Demo\obj\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.dll
 c:\users\srikarans\documents\visual studio 2017\Projects\AzureCache-StorageDemo\Azure.CachedStorage.Demo\obj\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.pdb
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Demo\obj\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.csprojAssemblyReference.cache
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Demo\obj\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.csproj.CoreCompileInputs.cache
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Demo\obj\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.AssemblyInfoInputs.cache
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Demo\obj\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.AssemblyInfo.cs
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Demo\bin\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.deps.json
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Demo\bin\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.runtimeconfig.json
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Demo\bin\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.runtimeconfig.dev.json
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Demo\bin\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.dll
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Demo\bin\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.pdb
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Demo\bin\Debug\netcoreapp2.0\Azure.CachedStorage.DataWriter.dll
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Demo\bin\Debug\netcoreapp2.0\Azure.CachedStorage.Entities.dll
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Demo\bin\Debug\netcoreapp2.0\Azure.CachedStorage.DataWriter.pdb
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Demo\bin\Debug\netcoreapp2.0\Azure.CachedStorage.Entities.pdb
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Demo\obj\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.csproj.CopyComplete
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Demo\obj\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.dll
+C:\Users\srikarans\Documents\GitHub\Read-Only-Cache\AzureCache-StorageDemo\Azure.CachedStorage.Demo\obj\Debug\netcoreapp2.0\Azure.CachedStorage.Demo.pdb
