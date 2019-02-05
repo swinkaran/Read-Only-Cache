@@ -17,7 +17,7 @@ namespace Azure.CachedStorage.Entities.DataWriter
         public async Task<IEnumerable<Expense>> GetAllExpensesAsync()
         {
             var Expenses = await FindAllAsync();
-            return Expenses.OrderBy(x => x.Name);
+            return Expenses;
         }
 
         public async Task<Expense> GetExpenseByIdAsync(Guid ExpenseId)

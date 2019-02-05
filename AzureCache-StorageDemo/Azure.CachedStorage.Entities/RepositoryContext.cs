@@ -8,13 +8,14 @@ namespace Azure.CachedStorage.Entities
 {
     public class RepositoryContext : DbContext
     {
-   
+
         public DbSet<Expense> Expenses { get; set; }
-        //public DbSet<Account> Accounts { get; set; }
+        public DbSet<Profile> Profiles { get; set; }
+        public DbSet<ExpenseCategory> ExpenseCategories { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder builder)
         {
-            builder.UseSqlServer("server=SRIKARAN\\SQLTEEHEE; database=exp1;Trusted_Connection=True;");
+            builder.UseSqlServer("server=BW-DESKTOP\\SQLEXPRESS2014; database=exp1;Trusted_Connection=True;");
         }
     }
 }

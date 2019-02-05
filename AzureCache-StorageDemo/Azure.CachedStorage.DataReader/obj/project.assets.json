@@ -664,23 +664,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\srikarans\\.nuget\\packages\\": {},
+    "C:\\Users\\Broswebs-Desk\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\srikarans\\Documents\\GitHub\\Read-Only-Cache\\AzureCache-StorageDemo\\Azure.CachedStorage.DataReader\\Azure.CachedStorage.DataReader.csproj",
+      "projectUniqueName": "C:\\Users\\Broswebs-Desk\\Documents\\GitHub\\Read-Only-Cache\\AzureCache-StorageDemo\\Azure.CachedStorage.DataReader\\Azure.CachedStorage.DataReader.csproj",
       "projectName": "Azure.CachedStorage.DataReader",
-      "projectPath": "C:\\Users\\srikarans\\Documents\\GitHub\\Read-Only-Cache\\AzureCache-StorageDemo\\Azure.CachedStorage.DataReader\\Azure.CachedStorage.DataReader.csproj",
-      "packagesPath": "C:\\Users\\srikarans\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\srikarans\\Documents\\GitHub\\Read-Only-Cache\\AzureCache-StorageDemo\\Azure.CachedStorage.DataReader\\obj\\",
+      "projectPath": "C:\\Users\\Broswebs-Desk\\Documents\\GitHub\\Read-Only-Cache\\AzureCache-StorageDemo\\Azure.CachedStorage.DataReader\\Azure.CachedStorage.DataReader.csproj",
+      "packagesPath": "C:\\Users\\Broswebs-Desk\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Broswebs-Desk\\Documents\\GitHub\\Read-Only-Cache\\AzureCache-StorageDemo\\Azure.CachedStorage.DataReader\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\srikarans\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Broswebs-Desk\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
