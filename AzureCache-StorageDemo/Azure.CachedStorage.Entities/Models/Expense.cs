@@ -24,7 +24,7 @@ namespace Azure.CachedStorage.Entities.Models
         public float Amount { get; set; }
 
         [Required(ErrorMessage = "Date is required")]
-        public float Date { get; set; }
+        public DateTime Date { get; set; }
 
         //Profile
         [Required]

@@ -22,9 +22,15 @@ namespace ReadCache.App.Controllers
 
         // GET api/expenses
         [HttpGet]
-        public IEnumerable<string> Get()
+        public async Task<IActionResult> Get()
         {
-            return new string[] { "value1", "value2" };
+            var expenseList = new ListExpenses.Query
+            {
+            };
+
+            var result = await _mediator.Send(expenseList);
+
+            return Ok(result);
         }
 
         // POST api/expense
