@@ -26,10 +26,11 @@ namespace ReadCache.App.Features.Expense
 
         public class ListExpensesValidator { }
 
-        public class MappingProfile {
+        public class MappingProfile : AutoMapper.Profile
+        {
             public MappingProfile()
             {
-                //CreateMap<DataModel.Models.User, Result>(MemberList.Source);
+                CreateMap<Azure.CachedStorage.Entities.Models.Expense, Result>(MemberList.Source);
             }
         }
 

@@ -1,4 +1,7 @@
-﻿using MediatR;
+﻿using AutoMapper;
+using Azure.CachedStorage.Entities;
+using MediatR;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -24,23 +27,35 @@ namespace ReadCache.App.Features.Expense
 
         public class ShowExpenseValidator { }
 
-        public class MappingProfile
+        public class MappingProfile:AutoMapper.Profile
         {
             public MappingProfile()
             {
-                //CreateMap<DataModel.Models.User, Result>(MemberList.Source);
+                CreateMap<Azure.CachedStorage.Entities.Models.Expense, Result>(MemberList.Source);
             }
         }
         public class ShowExpenseHandler : IRequestHandler<Query, Result>
         {
-            public ShowExpenseHandler()
-            {
+            private readonly IMapper _mapper;
 
+            public ShowExpenseHandler(IMapper mapper)
+            {
+                _mapper = mapper;
             }
 
-            public Task<Result> Handle(Query request, CancellationToken cancellationToken)
+            public async Task<Result> Handle(Query request, CancellationToken cancellationToken)
             {
-                var result = new Result { Id = new Guid() };
+                RepositoryContext rep = new RepositoryContext();
+
+                var user = await rep.Profiles.FirstOrDefaultAsync(u => u.Id == request.Id);
+
+                if (user is null)
+                {
+                    throw new ArgumentNullException($"{nameof(user)} was not found");
+                }
+
+                var result = _mapper.Map<DataModel.Models.User, Result>(user);
+
                 return result;
             }
         }
