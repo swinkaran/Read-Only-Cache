@@ -40,3 +40,5 @@ msbuild.wrn
 *.cache
 *.dll
 *.dll
+*.cache
+*.cache

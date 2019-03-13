@@ -54,7 +54,7 @@ namespace ReadCache.App.Features.Expense
                     throw new ArgumentNullException($"{nameof(user)} was not found");
                 }
 
-                var result = _mapper.Map<DataModel.Models.User, Result>(user);
+                var result = _mapper.Map<Azure.CachedStorage.Entities.Models.Profile, Result>(user);
 
                 return result;
             }
