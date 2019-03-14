@@ -11,7 +11,7 @@ namespace ReadCache.App.Features.Expense
 {
     public class ListExpenses
     {
-        public class Query : IRequest<Result>
+        public class Query : IRequest<IList<Result>>
         {
             public Guid Id { get; set; }
         }
@@ -20,8 +20,9 @@ namespace ReadCache.App.Features.Expense
         {
             public Guid Id { get; set; }
             public string ExpenseId { get; set; }
-            public string ExpenseName { get; set; }
-            public DateTime Created { get; set; }
+            public string Title { get; set; }
+            public float Amount { get; set; }
+            public DateTime BilledDate { get; set; }
         }
 
         public class ListExpensesValidator { }
@@ -34,31 +35,23 @@ namespace ReadCache.App.Features.Expense
             }
         }
 
-        public class ListExpensesHandler : IRequestHandler<Query, Result>
+        public class ListExpensesHandler : IRequestHandler<Query, IList<Result>>
         {
-            public ListExpensesHandler()
-            {
 
+            private readonly RepositoryContext rep;
+            private readonly IMapper _mapper;
+            
+            public ListExpensesHandler(IMapper mapper)
+            {
+                rep = new RepositoryContext();
+                _mapper = mapper;
             }
 
-            public Task<Result> Handle(Query request, CancellationToken cancellationToken)
+            public async Task<IList<Result>> Handle(Query request, CancellationToken cancellationToken)
             {
-
-                //                IList<Azure.CachedStorage.Entities.Models.Expense> expenses;
-                //                //var results =new Result();
-
-                //                RepositoryContext rep = new RepositoryContext();
-
-                //                foreach (Azure.CachedStorage.Entities.Models.Expense exp in rep.Expenses)
-                //                {
-                ////                    results.Add(new Result { ExpenseName = exp.Description, Created = exp.Date, ExpenseId = exp.Id.ToString() });
-                //                }
-
-                //                //var result = new Result { Id = new Guid(), ExpenseName = "Testing food cost" };
-                //                var result = new Result { Id = new Guid() };
-                //                return result;
-
-                throw new NotImplementedException();
+                IList<Azure.CachedStorage.Entities.Models.Expense> expenses = await rep.Expenses.ToAsyncEnumerable().ToList();
+                var results = _mapper.Map<IList<Azure.CachedStorage.Entities.Models.Expense>, IList<Result>>(expenses);
+                return results;
             }
         }
     }

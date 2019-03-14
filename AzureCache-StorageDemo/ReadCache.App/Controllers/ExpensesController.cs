@@ -32,6 +32,20 @@ namespace ReadCache.App.Controllers
 
             return Ok(result);
         }
+        
+        // GET api/expenses/5
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetExpense(Guid id)
+        {
+            var showExpense = new ShowExpense.Query
+            {
+                Id = id
+            };
+
+            var result = await _mediator.Send(showExpense);
+
+            return Ok(result);
+        }
 
         // POST api/expense
         [HttpPost]

@@ -21,8 +21,9 @@ namespace ReadCache.App.Features.Expense
         {
             public Guid Id { get; set; }
             public string ExpenseId { get; set; }
-            public string ExpenseName { get; set; }
-            public DateTime Created { get; set; }
+            public string Title { get; set; }
+            public string Description { get; set; }
+            public DateTime BilledDate { get; set; }
         }
 
         public class ShowExpenseValidator { }
@@ -47,15 +48,8 @@ namespace ReadCache.App.Features.Expense
             {
                 RepositoryContext rep = new RepositoryContext();
 
-                var user = await rep.Profiles.FirstOrDefaultAsync(u => u.Id == request.Id);
-
-                if (user is null)
-                {
-                    throw new ArgumentNullException($"{nameof(user)} was not found");
-                }
-
-                var result = _mapper.Map<Azure.CachedStorage.Entities.Models.Profile, Result>(user);
-
+                Azure.CachedStorage.Entities.Models.Expense expense = await rep.Expenses.Where(e => e.Id == request.Id).ToAsyncEnumerable().SingleOrDefault();
+                var result = _mapper.Map<Azure.CachedStorage.Entities.Models.Expense, Result>(expense);
                 return result;
             }
         }
