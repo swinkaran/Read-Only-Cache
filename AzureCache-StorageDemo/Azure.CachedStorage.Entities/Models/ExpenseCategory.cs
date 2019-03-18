@@ -15,15 +15,16 @@ namespace Azure.CachedStorage.Entities.Models
 
         [Key]
         [Column("ExpenseCategoryId")]
-        public Guid Id { get; set; }
-
+        public Guid ExpenseCategoryId { get; set; }
+        
         [Required(ErrorMessage = "Category name is required")]
         [StringLength(60, ErrorMessage = "Expense can't be longer than 60 characters")]
         public string Name { get; set; }
 
         [StringLength(200, ErrorMessage = "Description can't be longer than 60 characters")]
         public string Descrption { get; set; }
-
-        List<Expense> Expenses { get; set; }
+        
+        //Navigation properties
+        public ICollection<Expense> Expenses { get; set; }
     }
 }

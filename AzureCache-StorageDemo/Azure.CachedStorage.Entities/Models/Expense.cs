@@ -26,17 +26,17 @@ namespace Azure.CachedStorage.Entities.Models
         [Required(ErrorMessage = "Date is required")]
         public DateTime BilledDate { get; set; }
 
-        //Profile
-        [Required]
-        Profile Profile { get; set; }
-        [Required]
-        long ProfileId { get; set; }
+        ////Profile
+        //[Required]
+        //public Profile Profile { get; set; }
+        //[Required]
+        //public long ProfileId { get; set; }
 
         // Expenses Category
         [Required]
-        ExpenseCategory ExpenseCategory { get; set; }
+        public ExpenseCategory ExpenseCategory { get; set; }
         [Required]
-        long ExpenseCategoryId { get; set; }
+        public Guid ExpenseCategoryId { get; set; }
 
     }
 }
