@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace ReadCache.App.Features.Expense
 {
@@ -37,7 +38,6 @@ namespace ReadCache.App.Features.Expense
 
         public class ListExpensesHandler : IRequestHandler<Query, IList<Result>>
         {
-
             private readonly RepositoryContext rep;
             private readonly IMapper _mapper;
             
@@ -49,7 +49,7 @@ namespace ReadCache.App.Features.Expense
 
             public async Task<IList<Result>> Handle(Query request, CancellationToken cancellationToken)
             {
-                IList<Azure.CachedStorage.Entities.Models.Expense> expenses = await rep.Expenses.ToAsyncEnumerable().ToList();
+                IList<Azure.CachedStorage.Entities.Models.Expense> expenses = await rep.Expenses.Include(e => e.ExpenseCategory).ToAsyncEnumerable().ToList();
                 var results = _mapper.Map<IList<Azure.CachedStorage.Entities.Models.Expense>, IList<Result>>(expenses);
                 return results;
             }

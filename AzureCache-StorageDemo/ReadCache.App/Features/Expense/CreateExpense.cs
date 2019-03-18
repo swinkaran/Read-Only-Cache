@@ -32,7 +32,8 @@ namespace ReadCache.App.Features.Expense
                 Azure.CachedStorage.Entities.Models.Expense expense;
                 using (RepositoryContext rep = new RepositoryContext())
                 {
-                    await rep.Expenses.AddAsync(new Azure.CachedStorage.Entities.Models.Expense { Title = request.Name, Description = request.Description });
+                    
+                    await rep.Expenses.AddAsync(new Azure.CachedStorage.Entities.Models.Expense { Title = request.Name, Description = request.Description, ExpenseCategory = new Azure.CachedStorage.Entities.Models.ExpenseCategory { Name = "Food", Descrption = "Food and beverage" } });
                     await rep.SaveChangesAsync();
                 }
 

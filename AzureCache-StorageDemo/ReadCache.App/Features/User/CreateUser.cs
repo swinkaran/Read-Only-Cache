@@ -6,6 +6,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Threading;
 using Azure.CachedStorage.Entities;
+using AutoMapper;
+using Microsoft.AspNetCore.Identity;
 
 namespace ReadCache.App.Features.User
 {
@@ -39,8 +41,29 @@ namespace ReadCache.App.Features.User
 
         public class CreateUserHandler : IRequestHandler<Command, Result>
         {
+            private readonly IMapper _mapper;
+            private readonly IMediator _mediator;
+            //private readonly UserManager<P> _userManager;
+
+            public CreateUserHandler(
+              // IMapper mapper,
+              IMediator mediator
+              //UserManager<DataModel.Models.User> userManager
+              )
+            {
+                //_mapper = mapper;
+                _mediator = mediator;
+                // _userManager = userManager;
+            }
+
             public async Task<Result> Handle(Command request, CancellationToken cancellationToken)
             {
+                var userExists = await _mediator.Send(new DoesUserExist.Query(request.Email), cancellationToken);
+                if (userExists)
+                {
+                 //   throw new DuplicateNameException($"{nameof(message.Email)} already exists");
+                }
+                
                 Azure.CachedStorage.Entities.Models.Profile profile = new Azure.CachedStorage.Entities.Models.Profile { FirstName = request.FirstName, LastName = request.LastName };
 
                 using (RepositoryContext rep = new RepositoryContext())
@@ -53,6 +76,6 @@ namespace ReadCache.App.Features.User
                 return result;
             }
         }
-        
+
     }
 }
