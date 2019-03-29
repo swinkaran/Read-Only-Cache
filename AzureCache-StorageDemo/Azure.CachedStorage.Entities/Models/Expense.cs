@@ -26,6 +26,11 @@ namespace Azure.CachedStorage.Entities.Models
         [Required(ErrorMessage = "Date is required")]
         public DateTime BilledDate { get; set; }
 
+        [StringLength(500, ErrorMessage = "Message can't be longer than 500 characters")]
+        public string Message { get; set; }
+
+        [StringLength(500, ErrorMessage = "Attachments can't be longer than 500 characters")]
+        public string Attachments { get; set; }
         ////Profile
         //[Required]
         //public Profile Profile { get; set; }

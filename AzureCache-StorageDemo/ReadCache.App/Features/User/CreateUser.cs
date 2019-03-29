@@ -61,9 +61,9 @@ namespace ReadCache.App.Features.User
                 var userExists = await _mediator.Send(new DoesUserExist.Query(request.Email), cancellationToken);
                 if (userExists)
                 {
-                 //   throw new DuplicateNameException($"{nameof(message.Email)} already exists");
+                    //   throw new DuplicateNameException($"{nameof(message.Email)} already exists");
                 }
-                
+
                 Azure.CachedStorage.Entities.Models.Profile profile = new Azure.CachedStorage.Entities.Models.Profile { FirstName = request.FirstName, LastName = request.LastName };
 
                 using (RepositoryContext rep = new RepositoryContext())

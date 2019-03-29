@@ -20,9 +20,12 @@ namespace ReadCache.App
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        private readonly IHostingEnvironment env;
+
+        public Startup(IConfiguration configuration, IHostingEnvironment environment)
         {
             Configuration = configuration;
+            this.env = environment;
         }
 
         public IConfiguration Configuration { get; }
@@ -33,6 +36,11 @@ namespace ReadCache.App
             services.AddAutoMapper();
             services.AddMediatR();
             services.AddMvc();
+
+            if (!env.IsDevelopment())
+            {
+                services.Configure<MvcOptions>(o => o.Filters.Add(new RequireHttpsAttribute()));
+            }
 
             // Database settings for Data writer
             //services.AddDbContext<RepositoryContext>(item => item.UseSqlServer(Configuration.GetConnectionString("myconn")));
