@@ -23,11 +23,11 @@ namespace ReadCache.App.Controllers
         [HttpGet]
         public async Task<IActionResult> Get()
         {
-            var expenseList = new GetCategories.Query
+            var categoriesList = new GetCategories.Query
             {
             };
 
-            var result = await _mediator.Send(expenseList);
+            var result = await _mediator.Send(categoriesList);
 
             return Ok(result);
         }

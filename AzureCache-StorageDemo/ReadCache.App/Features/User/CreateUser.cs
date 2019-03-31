@@ -24,6 +24,7 @@ namespace ReadCache.App.Features.User
         public class Result
         {
             public Guid Id { get; set; }
+            public string Message { get; set; }
         }
 
         public class CreateUserValidator// : AbstractValidator<Command>
@@ -62,6 +63,8 @@ namespace ReadCache.App.Features.User
                 if (userExists)
                 {
                     //   throw new DuplicateNameException($"{nameof(message.Email)} already exists");
+
+                    return new Result { Message = "Email already exists" };
                 }
 
                 Azure.CachedStorage.Entities.Models.Profile profile = new Azure.CachedStorage.Entities.Models.Profile { FirstName = request.FirstName, LastName = request.LastName };
