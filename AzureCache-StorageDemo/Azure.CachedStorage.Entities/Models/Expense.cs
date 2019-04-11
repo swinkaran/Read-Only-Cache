@@ -31,11 +31,12 @@ namespace Azure.CachedStorage.Entities.Models
 
         [StringLength(500, ErrorMessage = "Attachments can't be longer than 500 characters")]
         public string Attachments { get; set; }
-        ////Profile
-        //[Required]
-        //public Profile Profile { get; set; }
-        //[Required]
-        //public long ProfileId { get; set; }
+
+        //Profile
+        [Required]
+        public Profile Profile { get; set; }
+        [Required]
+        public long ProfileId { get; set; }
 
         // Expenses Category
         [Required]

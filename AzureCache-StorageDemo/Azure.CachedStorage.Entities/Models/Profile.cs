@@ -27,6 +27,8 @@ namespace Azure.CachedStorage.Entities.Models
         public string LastName { get; set; }
 
         public string Email { get; set; }
+        public string Phone { get; set; }
+        public string Mobile { get; set; }
 
         List<Expense> Expenses { get; set; }
         //[StringLength(100, ErrorMessage = "Description can't be longer than 100 characters")]
