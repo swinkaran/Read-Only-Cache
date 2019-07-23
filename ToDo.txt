@@ -1,0 +1,22 @@
+Test the following Expense Features completely
+Create expense
+List expenses
+Show expense
+
+Create category
+Retrieve all categories
+Implement the Identity server authentication
+Do it in a Web Api sample - a seperate project
+
+Start plugging the UI
+
+Sending Emails
+These are Azure functions. Start with, once the User created - send a verification email
+
+User registration
+Fill the initial registration form with the following data
+Firstname, Lastname, Email, confirm email, password, confirm password.
+
+Validate and create a usre profile -> Save to the database. 
+Trigger the verification Email once saved the new contact.Varified-false
+Once verified, Varified-true. Redirect to the user home page.

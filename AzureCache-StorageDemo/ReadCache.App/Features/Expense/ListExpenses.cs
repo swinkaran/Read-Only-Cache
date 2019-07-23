@@ -24,6 +24,8 @@ namespace ReadCache.App.Features.Expense
             public string Title { get; set; }
             public float Amount { get; set; }
             public DateTime BilledDate { get; set; }
+            public string Description { get; set; }
+
         }
 
         public class ListExpensesValidator { }

@@ -15,7 +15,7 @@ namespace Azure.CachedStorage.Entities.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "2.2.1-servicing-10028")
+                .HasAnnotation("ProductVersion", "2.2.3-servicing-35854")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -25,16 +25,77 @@ namespace Azure.CachedStorage.Entities.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnName("ExpenseId");
 
+                    b.Property<float>("Amount");
+
+                    b.Property<string>("Attachments")
+                        .HasMaxLength(500);
+
+                    b.Property<DateTime>("BilledDate");
+
                     b.Property<string>("Description")
                         .HasMaxLength(100);
 
-                    b.Property<string>("Name")
+                    b.Property<Guid>("ExpenseCategoryId");
+
+                    b.Property<string>("Message")
+                        .HasMaxLength(500);
+
+                    b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(60);
 
                     b.HasKey("Id");
 
+                    b.HasIndex("ExpenseCategoryId");
+
                     b.ToTable("Expense");
+                });
+
+            modelBuilder.Entity("Azure.CachedStorage.Entities.Models.ExpenseCategory", b =>
+                {
+                    b.Property<Guid>("ExpenseCategoryId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("ExpenseCategoryId");
+
+                    b.Property<string>("Descrption")
+                        .HasMaxLength(200);
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(60);
+
+                    b.HasKey("ExpenseCategoryId");
+
+                    b.ToTable("ExpenseCategories");
+                });
+
+            modelBuilder.Entity("Azure.CachedStorage.Entities.Models.Profile", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("ProfileId");
+
+                    b.Property<string>("Email");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(60);
+
+                    b.Property<string>("LastName")
+                        .IsRequired()
+                        .HasMaxLength(60);
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Profile");
+                });
+
+            modelBuilder.Entity("Azure.CachedStorage.Entities.Models.Expense", b =>
+                {
+                    b.HasOne("Azure.CachedStorage.Entities.Models.ExpenseCategory", "ExpenseCategory")
+                        .WithMany("Expenses")
+                        .HasForeignKey("ExpenseCategoryId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }
